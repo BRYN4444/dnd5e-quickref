@@ -30,7 +30,7 @@ function show_modal(data, color, type) {
     var bullets = data.bullets || [];
     var reference = data.reference || "";
     type = type || "";
-    color = color || "black"
+    color = color || ""
 
     $("body").addClass("modal-open");
     $("#modal").addClass("modal-visible");
@@ -57,18 +57,47 @@ function fill_section(data, parentname, type) {
 }
 
 function init() {
-    fill_section(data_movement, "basic-movement", "Move");
+    fill_section(data_abilities_extra, "abilities-extra", "Abilities & Skills");
+    fill_section(data_abilities_str, "abilities-str", "Abilities & Skills");
+    fill_section(data_abilities_dex, "abilities-dex", "Abilities & Skills");
+    fill_section(data_abilities_con, "abilities-con", "Abilities & Skills");
+    fill_section(data_abilities_int, "abilities-int", "Abilities & Skills");
+    fill_section(data_abilities_wis, "abilities-wis", "Abilities & Skills");
+    fill_section(data_abilities_cha, "abilities-cha", "Abilities & Skills");
+    fill_section(data_combat, "combat-start", "Combat");
+    fill_section(data_movement, "basic-movement", "Movement");
+    fill_section(data_attack, "attack-actions", "Action: Attack");
     fill_section(data_action, "basic-actions", "Action");
     fill_section(data_bonusaction, "basic-bonus-actions", "Bonus action");
     fill_section(data_reaction, "basic-reactions", "Reaction");
+    fill_section(data_food, "basic-food", "Food & Drink");
+    fill_section(data_selling, "services-selling", "Goods & Services");
+    fill_section(data_travel, "services-travel", "Goods & Services");
+    fill_section(data_weparm, "services-weparm", "Goods & Services");
+    fill_section(data_itemgear, "services-itemgear", "Goods & Services");
+    fill_section(data_hire, "services-hire", "Goods & Services");
+    fill_section(data_rest, "downtime-rest", "Resting");
+    fill_section(data_downtime, "downtime-living", "Downtime");
     fill_section(data_condition, "basic-conditions", "Condition");
-    fill_section(data_environment_obscurance, "environment-obscurance", "Environment");
-    fill_section(data_environment_light, "environment-light", "Environment");
-    fill_section(data_environment_vision, "environment-vision", "Environment");
-    fill_section(data_environment_cover, "environment-cover", "Environment");
+    fill_section(data_injury, "basic-injury", "Lingering Injuries");
+    fill_section(data_environment_obscurance, "environment-obscurance", "Environmental effects");
+    fill_section(data_environment_light, "environment-light", "Environmental effects");
+    fill_section(data_environment_vision, "environment-vision", "Environmental effects");
+    fill_section(data_environment_cover, "environment-cover", "Environmental effects");
+    fill_section(data_environment_terrain, "environment-terrain", "Environmental effects");
+    fill_section(data_death, "basic-death", "Death & Prevention");
+
 
     var modal = document.getElementById("modal");
-    modal.onclick = hide_modal;
+    var container = document.getElementById("modal-container");
+
+    modal.addEventListener("click", function () {
+        hide_modal();
+    }, false);
+    container.addEventListener("click", function (ev) { 
+    ev.stopPropagation();
+    }, false);
+
 }
 
 $(window).load(init);
