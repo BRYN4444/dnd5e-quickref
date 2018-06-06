@@ -158,53 +158,122 @@ table#drug td:last-child {
 /* ------------------------------------------------------------------------- */
 /* Colors */
 /* ------------------------------------------------------------------------- */
-#section-movement, #section-movement .item-icon {
-    background-color: maroon;
-    border-color: maroon;
+#section-abilities, #section-abilities .item-icon {
+    background-color: DodgerBlue;
+    border-color: DodgerBlue;
 }
-#section-movement .text {
-    color: maroon;
+#section-abilities .text {
+    color: DodgerBlue;
 }
 
-#section-action, #section-action .item-icon {
-    background-color: black;
-    border-color: black;
+#category-combat {
+    background-color: white;
+    border-color: white;
 }
-#section-action .text {
+#combat-start .item-icon {
+    background-color: black;
+}
+#category-combat .text {
     color: black;
 }
 
+#section-movement, #section-movement .item-icon {
+    background-color: SaddleBrown;
+    border-color: SaddleBrown;
+}
+#section-movement .text {
+    color: SaddleBrown;
+}
+
+#section-action, #section-action .item-icon {
+    background-color: maroon;
+    border-color: maroon;
+}
+#section-action .text {
+    color: maroon;
+}
+
+#section-attack, #section-attack .item-icon {
+    background-color: #C00000;
+    border-color: #C00000;
+}
+#section-attack .text {
+    color: #C00000;
+}
+
 #section-bonus-action, #section-bonus-action .item-icon {
-    background-color: indigo;
-    border-color: indigo;
+    background-color: #FF6600;
+    border-color: #FF6600;
 }
 #section-bonus-action .text {
-    color: indigo;
+    color: #FF6600;
 }
 
 #section-reaction, #section-reaction .item-icon {
-    background-color: DarkOliveGreen ;
-    border-color: DarkOliveGreen ;
+    background-color: OrangeRed;
+    border-color: OrangeRed;
 }
 #section-reaction .text {
-    color: DarkOliveGreen ;
+    color: OrangeRed;
 }
 
-#section-condition, #section-condition .item-icon {
-    background-color: FireBrick;
-    border-color: FireBrick;
-}
-#section-condition .text {
-    color: FireBrick;
-}
-
-#section-environment, #section-environment .item-icon {
+#section-food, #section-food .item-icon {
     background-color: ForestGreen;
     border-color: ForestGreen;
 }
-#section-environment .text {
+#section-food .text {
     color: ForestGreen;
 }
+
+#section-services, #section-services .item-icon {
+    background-color: DarkOliveGreen;
+    border-color: DarkOliveGreen;
+}
+#section-services .text {
+    color: DarkOliveGreen;
+}
+
+#section-downtime, #section-downtime .item-icon {
+    background-color: #a46a00;
+    border-color: #a46a00;
+}
+#section-downtime .text {
+    color: #a46a00;
+}
+
+#section-condition, #section-condition .item-icon {
+    background-color: purple;
+    border-color: purple;
+}
+#section-condition .text {
+    color: purple;
+}
+
+#section-injury, #section-injury .item-icon {
+    background-color: indigo;
+    border-color: indigo;
+}
+#section-injury .text {
+    color: indigo;
+}
+
+#section-environment, #section-environment .item-icon {
+    background-color: DimGray;
+    border-color: DimGray;
+}
+#section-environment .text {
+    color: DimGray;
+}
+
+#section-death, #section-death .item-icon {
+    background-color: DarkSlateGray;
+    border-color: DarkSlateGray;
+}
+#section-death .text {
+    color: DarkSlateGray;
+}
+
+
 
 
 /* ------------------------------------------------------------------------- */
@@ -212,9 +281,11 @@ table#drug td:last-child {
 /* ------------------------------------------------------------------------- */
 
 body {
-    display: flex;
+	display: flex;
     justify-content:center;
     align-content:center;
+    background:#000;
+    padding:8px 8px 1px 8px;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -359,4 +430,3 @@ p:first-child {
     .itemsize { height: 36px; width:  33%; }
     .modalsize {}
 }
-
