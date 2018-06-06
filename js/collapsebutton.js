@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    $.w = $(window);
+    $.w.on('resize', res);
+    res();
+	function res() {
+		$('#modal-bullets').css('max-height',($.w.outerHeight()-217)+'px');
+		$('#modal-backdrop').css('height',($.w.outerHeight())+'px');
+	};
+
+
     $("#collapse-all").click(function(){
         $("#tog-abilities").attr("class","toggler show").parent().animate({ height: 25 }, 600);
         $("#section-abilities .section-content").slideUp("slow");
