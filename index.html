@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title>D&D 5e quick reference</title>
+	<link rel="shortcut icon" href="/favicon.gif" type="image/gif">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/quickref.css">
     <link rel="stylesheet" type="text/css" href="css/icons.css">
@@ -12,70 +13,178 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
     <!-- Javascript -->
     <script type="text/javascript" src="js/jquery/jquery.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/collapsebutton.js" charset="utf-8"></script>
 </head>
 <body class="page-background">
     <div class="page fontsize" data-size="fullscreen">
 
-        <!-- Movement section -->
-        <div id="section-movement" class="section-container">
+		<!-- Abilities -->
+        <div id="section-abilities" class="section-container">
             <div class="section-title">
-                Movement <span class="float-right">limited by movement speed</span>
+                <div id="tog-abilities" class="toggler hide"></div> Abilities & Skills <span id="collapse-all" class="float-right">[ Collapse All ]</span>
+            </div>
+            <div class="section-content">
+                <div class="section-row" id="abilities-extra"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    <b>Strength (STR)</b> measures bodily power, athletic training, and the extent to which you can exert raw physical force.
+                </div>
+                <div class="section-row" id="abilities-str"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    <b>Dexterity (DEX)</b> measures agility, reflexes, and balance.
+                </div>
+                <div class="section-row" id="abilities-dex"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    <b>Constitution (CON)</b> measures health, stamina, endurance, and vital force. Largely passive ability.
+                </div>
+                <div class="section-row" id="abilities-con"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    <b>Intelligence (INT)</b> measures mental acuity, accuracy of recall, and the ability to reason.
+                </div>
+                <div class="section-row" id="abilities-int"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    <b>Wisdom (WIS)</b> reflects how attuned you are to the world around you and represents perceptiveness and intuition.
+                </div>
+                <div class="section-row" id="abilities-wis"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    <b>Charisma (CHA)</b> measures your ability to interact effectively with others. It includes such factors as confidence and eloquence, and it can represent a charming or commanding personality.
+                </div>
+                <div class="section-row" id="abilities-cha"></div>
+            </div>
+        </div>
+	
+		<!-- Combat category -->
+		<div id="category-combat" class="section-container">
+			<div class="section-title" style="color:black;">Combat<span class="float-right">1 round = 6 seconds (in world)</span></div>
+
+			<div class="section-row" id="combat-start"></div>
+	
+			<!-- Movement section -->
+			<div id="section-movement" class="section-container">
+				<div class="section-title">
+					<div id="tog-movement" class="toggler hide"></div> Movement <span class="float-right">limited by movement speed</span>
+				</div>
+				<div class="section-content">
+					<div class="section-row section-subtitle text fontsize">
+						You can move at any time during your turn (before, after, or during actions).
+					</div>
+					<div class="section-row" id="basic-movement"></div>
+				</div>
+			</div>
+
+			<!-- Action section -->
+			<div id="section-action" class="section-container">
+				<div class="section-title">
+					<div id="tog-action" class="toggler hide"></div> Action <span class="float-right">1/turn</span>
+				</div>
+				<div class="section-content">
+					<div id="section-attack" class="section-container">
+						<div class="section-title">
+							Attack
+						</div>
+						<div class="section-content">
+							<div class="section-row section-subtitle text fontsize">
+								Determine how you'd like to attack (melee, ranged, spell), pick a target within your attack's range (creature, object, location), determine modifiers (proficiency, advantage, disadvantage, penalties, bonuses), then attempt a successful attack roll to grant yourself a damage roll.
+							</div>
+							<div class="section-row" id="attack-actions"></div>
+						</div>
+					</div>
+					<div class="section-row section-subtitle text fontsize">
+						Besides proper attacks, there are a variety of things you can do that use up your action.
+					</div>
+					<div class="section-row" id="basic-actions"></div>
+				</div>
+			</div>
+
+			<!-- Bonus action section -->
+			<div id="section-bonus-action" class="section-container">
+				<div class="section-title">
+					<div id="tog-bonus-action" class="toggler hide"></div> Bonus action <span class="float-right">max. 1/turn</span>
+				</div>
+				<div class="section-content">
+					<div class="section-row section-subtitle text fontsize">
+						You can take a bonus action only when a special ability, spell, or feature states that you can do something as a bonus action.
+					</div>
+					<div class="section-row" id="basic-bonus-actions"></div>
+				</div>
+			</div>
+
+			<!-- Reaction section -->
+			<div id="section-reaction" class="section-container">
+				<div class="section-title">
+					<div id="tog-reaction" class="toggler hide"></div> Reaction <span class="float-right">max. 1/round</span>
+				</div>
+				<div class="section-content">
+					<div class="section-row section-subtitle text fontsize">
+						A reaction is an instant response to a trigger of some kind, which can occur on your turn or on someone else's.
+					</div>
+					<div class="section-row" id="basic-reactions"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Food & Drink section -->
+        <div id="section-food" class="section-container">
+            <div class="section-title">
+                <div id="tog-food" class="toggler hide"></div> Food & Drink
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
-                    You can move at any time during your turn (before, after, or during actions).
+                    Living creatures must eat and drink to sustain said life. Magic can produce food or trick the mind, but it cannot truly cure hunger or thirst. Undead creatures, however, do survive with magic alone.
                 </div>
-                <div class="section-row" id="basic-movement">
-                </div>
+                <div class="section-row" id="basic-food"></div>
             </div>
         </div>
 
-        <!-- Action section -->
-        <div id="section-action" class="section-container">
+        <!-- Goods & Services section -->
+        <div id="section-services" class="section-container">
             <div class="section-title">
-                Action <span class="float-right">1/turn</span>
+                <div id="tog-services" class="toggler hide"></div> Goods & Services
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
-                    You can also interact with one object or feature of the
-                    environment for free.
+                    Whether it be though currency or bartering, you need either to do business.
                 </div>
-                <div class="section-row" id="basic-actions"></div>
+                <div class="section-row" id="services-selling"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    Unless you want to pay every time, owning your own transportation methods could save you money in the long run.
+                </div>
+                <div class="section-row" id="services-travel"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    Weapons, armor, and shields are an integral part of most combat encounters. They each vary in types and values.
+                </div>
+                <div class="section-row" id="services-weparm"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    There are a variety of other things to purchase, with their own unique properties.
+                </div>
+                <div class="section-row" id="services-itemgear"></div>
+                <div class="section-row section-subtitle text fontsize">
+                    With enough money, you can hire people to do mostly anything.
+                </div>
+                <div class="section-row" id="services-hire"></div>
             </div>
         </div>
 
-        <!-- Bonus action section -->
-        <div id="section-bonus-action" class="section-container">
+        <!-- Resting & Downtime section -->
+        <div id="section-downtime" class="section-container">
             <div class="section-title">
-                Bonus action <span class="float-right">max. 1/turn</span>
+                <div id="tog-downtime" class="toggler hide"></div> Resting & Downtime
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
-                    You can take a bonus action only when a special ability, spell, or feature
-                    states that you can do something as a bonus action.
+                    Everyone need rest-time to sleep and eat, tend their wounds, refresh their minds and spirits for spellcasting, and brace themselves for further adventure.
                 </div>
-                <div class="section-row" id="basic-bonus-actions"></div>
-            </div>
-        </div>
-
-        <!-- Reaction section -->
-        <div id="section-reaction" class="section-container">
-            <div class="section-title">
-                Reaction <span class="float-right">max. 1/round</span>
-            </div>
-            <div class="section-content">
+                <div class="section-row" id="downtime-rest"></div>
                 <div class="section-row section-subtitle text fontsize">
-                    A reaction is an instant response to a trigger of some kind, which
-                    can occur on your turn or on someone else's.
+                    Between long quests, adventurers may use this time to perform other tasks, such as crafting arms and armor, performing research, or spending their hard-earned gold.
                 </div>
-                <div class="section-row" id="basic-reactions"></div>
+                <div class="section-row" id="downtime-living"></div>
             </div>
         </div>
-
+		
         <!-- Condition section -->
         <div id="section-condition" class="section-container">
             <div class="section-title">
-                Condition
+                <div id="tog-condition" class="toggler hide"></div> Condition
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -84,11 +193,25 @@
                 <div class="section-row" id="basic-conditions"></div>
             </div>
         </div>
-        
+
+		
+        <!-- Injury section -->
+        <div id="section-injury" class="section-container">
+            <div class="section-title">
+                <div id="tog-injury" class="toggler hide"></div> Lingering Injuries
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    All major injuries can be healed with magic. In the meantime, injuries provide penalties while adventuring.
+                </div>
+                <div class="section-row" id="basic-injury"></div>
+            </div>
+        </div>
+		
         <!-- Environmental section -->
         <div id="section-environment" class="section-container">
             <div class="section-title">
-                Environmental Effects
+                <div id="tog-environment" class="toggler hide"></div> Environmental Effects
             </div>
             <div class="section-content">
                 <div class="section-row section-subtitle text fontsize">
@@ -107,9 +230,26 @@
                     Obstacles can provide cover during combat, making a target more difficult to harm.
                 </div>
                 <div class="section-row" id="environment-cover"></div>
+				<div class="section-row section-subtitle text fontsize">
+                    The world around you can provide treacherous pitfalls for the unobservant or unlucky.
+                </div>
+                <div class="section-row" id="environment-terrain"></div>
             </div>
         </div>
 
+        <!-- Death section -->
+        <div id="section-death" class="section-container">
+            <div class="section-title">
+                <div id="tog-death" class="toggler hide"></div> Death & Prevention
+            </div>
+            <div class="section-content">
+                <div class="section-row section-subtitle text fontsize">
+                    If damage reduces you to 0 hit points, you fall unconscious. This unconsciousness ends if you regain any hit points.
+                </div>
+                <div class="section-row" id="basic-death"></div>
+            </div>
+        </div>
+		
     </div>
 
     <!-- Modal -->
@@ -136,12 +276,19 @@
     </div>
 
     <!-- Data -->
+	<script type="text/javascript" src="js/data_abilities.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/data_combat.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_movement.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_action.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_bonusaction.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_reaction.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/data_food.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/data_services.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/data_downtime.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_condition.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/data_injury.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/data_environment.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/data_death.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/quickref.js" charset="utf-8"></script>
 </body>
 </html>
