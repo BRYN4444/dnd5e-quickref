@@ -1,7 +1,7 @@
 data_condition = [
     {
         title: "Blinded",
-        icon: "one-eyed",
+        icon: "blindfold",
         subtitle: "You can't see",
         description: "You can't see",
         reference: "PHB, pg. 290.",

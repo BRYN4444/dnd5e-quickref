@@ -1,18 +1,123 @@
-data_action = [
+data_attack = [
     {
-        title: "Attack",
-        icon: "crossed-swords",
-        subtitle: "Melee or ranged attack",
-        description: "Perform a melee or ranged attack with your weapon",
+        title: "Determine Modifiers",
+        icon: "rolling-dices",
+        subtitle: "Dis/advantage, bonuses, cover",
+        description: "Determine whether the target has cover and whether you have advantage, disadvantage, penalties, or bonuses on Attack Rolls.",
         reference: "PHB, pgs. 192,194-195.",
         bullets: [
-            "Certain features, such as the <i>Extra Attack</i> feature of the fighter, allow you to make more than one attack with this action. Each of these attacks is a separate roll and may target different creatures. You may move in between these attacks.",
-            "When you attack with a light melee weapon, you can use a bonus action to attack with your other hand (see the <i>Offhand attack</i> bonus action).",
-            "You may replace one of your melee attacks with a <i>Grapple</i> or a <i>Shove</i>.",
-            "Some conditions give advantage on the attack: attacks against blinded, paralyzed, petrified, restrained, stunned, or unconscious targets; melee attacks against prone targets; attacks by invisible or hidden attackers.",
-            "Some conditions give disadvantage on the attack: attacks against invisible or hidden targets; ranged attacks against prone targets; attacks by blinded, frightened, poisoned, or restrained attackers."
+            "Obstacles can provide <b>cover</b> during combat, making a target more difficult to harm. For further details, see the various cover types under <i>Environmental Effects</i>.",
+            "Some conditions give <b>advantage</b> on the attack: attacks against blinded, paralyzed, petrified, restrained, stunned, or unconscious targets; melee attacks against prone targets; attacks by invisible or hidden attackers.",
+            "Some conditions give <b>disadvantage</b> on the attack: attacks against invisible or hidden targets; ranged attacks against prone targets; attacks by blinded, frightened, poisoned, or restrained attackers.",
+            "The <b>ability modifier</b> used for a <b>melee weapon attack is Strength</b>, and <b>Dexterity for ranged weapon attacks</b>. If the weapon has the <b>Finesse</b> property, you can swap these modifiers if you wish.",
+            "Certain spells allow you to <b>add your spellcasting modifier</b> to your attack roll. These differ between <b>Intelligence, Wisdom, or Charisma</b> depending on your class.",
+            "You add your <b>proficiency bonus</b> to your attack roll when you attack using a weapon with which you have proficiency, as well as when you attack with a spell",
+            "A class feature, a spell, a particular circumstance, or some other effect might give a <b>bonus or penalty</b> to the check."
         ]
     },
+    {
+        title: "Attack Roll",
+        icon: "dice-twenty",
+        subtitle: "Determine if you hit",
+        description: "Determine if your attack hits your target, critical hits, or critical misses.",
+        reference: "PHB, pg. 194.",
+        bullets: [
+            "To make an attack roll, <b>roll a d20 and add the appropriate modifiers</b>. If the total of the roll plus modifiers equals or exceeds the <b>target&#39;s Armor Class (AC)</b>, the attack hits.",
+            "If the d20 roll for an attack is a 20, the attack becomes a <b>critical hit</b>, and thus hits regardless of any modifiers or the target&#39;s AC. For further details, see the <i>Damage Roll</i> section.",
+            "If the d20 roll for an attack is a 1, the attack becomes a <b>critical miss</b>, and misses regardless of any modifiers or the target&#39;s AC."
+        ]
+    },
+    {
+        title: "Melee Attacks",
+        icon: "crossed-swords",
+        subtitle: "Hand-to-hand combat",
+        description: "",
+        reference: "PHB, pg. 195.",
+        bullets: [
+            "Most creatures have a 5-foot reach and can thus attack targets within 5 feet of them when making a melee attack.",
+            "Certain creatures (typically those larger than Medium) have melee attacks with a greater reach than 5 feet, as noted in their descriptions.",
+            "When you are unarmed, you can fight in melee by making a <b>1d4 bludgeoning unarmed strike</b>."
+        ]
+    },
+    {
+        title: "Ranged Attacks",
+        icon: "pocket-bow",
+        subtitle: "Strike from a far",
+        description: "",
+        reference: "PHB, pg. 195.",
+        bullets: [
+            "You can make ranged attacks only against targets within a specified <b>range</b>.",
+            "If a ranged attack, such as one made with a spell, has a <b>single range</b>, you can't attack a target beyond this range.",
+            "Some ranged attacks, such as those made with a longbow or a shortbow, have <b>two ranges</b>. The smaller number is the normal range, and the larger number is the long range. Your attack roll has <b>disadvantage</b> when your target is beyond normal range, and you can't attack a target beyond the long range.",
+            "Aiming a ranged attack is more difficult when a foe is next to you. When you make a ranged attack with a weapon, a spell, or some other means, you have <b>disadvantage</b> on the attack roll if you are <b>within 5 feet of a hostile creature</b> who can see you and who isn't incapacitated."
+        ]
+    },
+    {
+        title: "Cast a spell",
+        icon: "magic-swirl",
+        subtitle: "Cast time of 1 action",
+        description: "Cast a spell with a casting time of 1 action",
+        reference: "PHB, pg. 192, 201-205 (for spellcasting rules).",
+        bullets: [
+            "You can't cast a spell with your action and a different spell with your bonus action in the same turn, <b>except if the action is used to cast a cantrip</b>.",
+            "The target of a spell <b>must be within the spell's range</b>. To target something, you must have a <b>clear path to it</b>, so it can't be behind total cover.",
+            "Spells with material components <b>do not consume the material unless explicitly stated</b>. Unless the cost of a material is given, you can assume that the cost is negligible and the material is simply available in a component pouch.",
+            "Some spells require you to maintain concentration in order to keep their magic active. <b>If you lose concentration, such a spell ends</b>. You lose concentration on a spell if you cast another spell that requires concentration or when you are incapacitated. Each time you take damage, you must make a <b>Constitution saving throw</b> to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher."
+        ]
+    },
+    {
+        title: "Cast a long spell",
+        icon: "kneeling",
+        subtitle: "Cast time of &ge;1 minute",
+        description: "Cast a spell with a long casting time",
+        reference: "PHB, pgs. 201-202.",
+        bullets: [
+            "When you cast a spell with a casting time <b>longer than a single action, bonus action, or reaction</b>, you must spend your action each turn casting the spell, and you must <b>maintain your concentration</b> while you do so.",
+            "<b>Ritual spells</b> can be cast following the normal rules for spellcasting, or you may take <b>10 minutes longer to cast</b>. The benefit being it <b>doesn't expend a spell slot</b>. However, the ritual version of a spell <b>can't be cast at a higher level</b>. To cast a spell as a ritual, a spellcaster must have a feature that grants the ability to do so and must also have the spell prepared or on their list of spells known (unless the character's ritual feature specifies otherwise).",
+            "If your concentration is broken, the spell fails, but you don't expend a spell slot. If you want to try casting the spell again, you must start over."
+        ]
+    },
+    {
+        title: "Use class feature",
+        icon: "embrassed-energy",
+        subtitle: "Some features allow extra attacks",
+        description: "Use a racial or class feature that uses an action",
+        reference: "See class page for more information.",
+        bullets: [
+            "Certain features, such as the <i>Extra Attack</i> feature of the fighter, allow you to make more than one attack with this action. Each of these attacks is a separate roll and may target different creatures. You may move in between these attacks."
+        ]
+    },
+    {
+        title: "Damage Roll",
+        icon: "dice-twenty",
+        subtitle: "Reduce opponent HP",
+        description: "Each weapon, spell, and harmful monster ability specifies the damage it can deal",
+        reference: "PHB, pg. 196.",
+        bullets: [
+            "To deal damage: roll the damage die/dice, add any modifiers, and apply the damage to your target.",
+            "Your <b>damage die/dice</b>, and the amount you roll, is listed along with your weapon/spell attack. For <b>critical hits</b>, you get to roll all of the damage dice twice, add them together, then add any relevant modifiers as normal.",
+            "When attacking with a <b>melee weapon</b>, you add your <b>Strength modifier</b> to the roll. For <b>ranged weapon</b>, you add your <b>Dexterity modifier</b>. If the weapon has the <b>Finesse</b> property, you can swap these modifiers if you wish.",
+            "Certain spells allow you to <b>add your spellcasting modifier</b> to your damage roll. These differ between <b>Intelligence, Wisdom, or Charisma</b> depending on your class.",
+            "If a spell or other effect deals damage to more than one target at the same time, roll the damage once for all of them. For example, when a wizard casts fireball or a cleric casts flame strike, the spell's damage is rolled once for all creatures caught in the blast."
+        ]
+    },
+    {
+        title: "Damage Types",
+        icon: "wrapped-heart",
+        subtitle: "Resistance or vulnerability",
+        description: "Different attacks, damaging spells, and other harmful effects deal different types of damage",
+        reference: "PHB, pg. 196.",
+        bullets: [
+            "If a creature or an object has <b>resistance</b> to a damage type, damage of that type is halved against it.",
+            "If a creature or an object has <b>vulnerability</b> to a damage type, damage of that type is doubled against it.",
+            "Resistance and then vulnerability are applied <b>after all other modifiers to damage</b>.",
+            "Multiple instances of resistance or vulnerability that affect the same damage type count as only one instance.",
+            "<table style='font-size: 75%;'><tr><th style='text-align:left'>Damage Type</th><th></th><th></th><th style='text-align:left'>Typical Origins</th></tr><tr><td>Acid</td><td></td><td></td><td>Corrosive substance of dissolving enzymes, bubbling and dark in color</td></tr><tr><td>Bludgeoning</td><td></td><td></td><td>Blunt force attacks like hammers or impacts like falling constriction</td></tr><tr><td>Cold</td><td></td><td></td><td>Frigid areas deal this over time, but is typical in spells</td></tr><tr><td>Fire</td><td></td><td></td><td>Many spels conjure these raw flames</td></tr><tr><td>Force</td><td></td><td></td><td>Pure magical energy focused into a damaging form</td></tr><tr><td>Lightning</td><td></td><td></td><td>It is rare to be struck by this, but used common in spells</td></tr><tr><td>Necrotic</td><td></td><td></td><td>Magic that withers matter and even the soul</td></tr><tr><td>Piercing</td><td></td><td></td><td>Puncturing and impaling attacks, including spears and monster bites</td></tr><tr><td>Poison</td><td></td><td></td><td>Venomous stings, toxic gas, and damage over time</td></tr><tr><td>Psychic</td><td></td><td></td><td>Direct mental pain or psionic attacks</td></tr><tr><td>Radiant</td><td></td><td></td><td>Holy energy that sears the flesh like fire and overloads the spirit with power</td></tr><tr><td>Slashing</td><td></td><td></td><td>From swords, axes, and even monster claws, it is the most common melee damage</td></tr><tr><td>Thunder</td><td></td><td></td><td>Not to be confused with <i>Lightning</i>, this is a concussive burst of sound</td></tr></table>",
+        ]
+    }
+]
+
+data_action = [
     {
         title: "Grapple",
         icon: "grab",
@@ -40,16 +145,16 @@ data_action = [
         ]
     },
     {
-        title: "Cast a spell",
-        icon: "magic-swirl",
-        subtitle: "Cast time of 1 action",
-        description: "Cast a spell with a casting time of 1 action",
-        reference: "PHB, pg. 192.",
+        title: "Disarm",
+        icon: "catch",
+        subtitle: "Special melee attack",
+        description: "Knock a weapon or another item from a target's grasp",
+        reference: "DMG, pg. 271.",
         bullets: [
-            "You can't cast a spell with you action and a different spell with your bonus action in the same turn, except if the action is used to cast a cantrip.",
-            "The target of a spell must be within the spell's range. To target something, you must have a clear path to it, so it can't be behind total cover.",
-            "Spells with material components do not consume the material unless explicitly stated. Unless the cost of a material is given, you can assume that the cost is negligible and the material is simply available in a component pouch.",
-            "Some spells require you to maintain concentration in order to keep their magic active. If you lose concentration, such a spell ends. You lose concentration on a spell if you cast another spell that requires concentration or when you are incapacitated. Each time you take damage, you must make a Constitution saving throw to maintain your concentration. The DC equals 10 or half the damage you take, whichever number is higher."
+            "Using the <i>Attack</i> action, you can make a special melee attack to disarm a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
+            "The attacker makes an <b>attack roll</b> contested by the target's <b>Athletics or Acrobatics</b> ability check. If the attacker wins the contest, the attack causes no damage or other ill effect, but the defender <b>drops the item</b>.",
+            "The attacker has <b>disadvantage on this attack roll</b> if the target is holding the item with <b>two or more hands</b>.",
+            "The target has <b>advantage</b> on this ability check if it is larger than the attacking creature, or <b>disadvantage</b> if it is smaller."
         ]
     },
     {
@@ -161,7 +266,21 @@ data_action = [
             "First, you decide what perceivable circumstance will trigger your reaction.",
             "Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it.",
             "When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger.",
-            "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration"
+            "When you ready a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of 1 action, and holding onto the spell's magic requires concentration."
+        ]
+    },
+    {
+        title: "Climb onto a Bigger Creature",
+        icon: "giant",
+        subtitle: "Grapple or jump upon",
+        description: "When facing a larger creature, some adventurers wish to climb onto their foe",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "To <b>climb onto a creature</b>, follow the rules of <i>grappling</i>. Since certain creatures can't grapple over a size threshold, they can use <i>long or high jumping</i> and <i>climbing</i> rules instead, treating the creature as <i>difficult terrain</i>.",
+            "Once in a grapple or having landed on the large creature, the smaller creature <b>uses its action</b> to make an <b>Athletics or Acrobatics</b> check <b>contested</b> by the target's <b>Dexterity check</b>.",
+            "If the smaller creature <b>fails the contest</b>, they <i>fall</i> back to the ground.",
+            "If the smaller creature <b>wins the contest</b>, they successfully move into the target creature's space and cling to its body. While in the target's space, the smaller creature <b>moves with the target</b> and has <b>advantage</b> on attack rolls against it. The smaller creature can move around within the larger creature's space, treating the space as <b>difficult terrain</b>.",
+            "The larger creature may attack the smaller creature depending on the smaller creature's location and is left to the DM's discretion. The larger creature can dislodge the smaller creature as an action (knocking it off, scraping it against a wall, or grabbing and throwing it) by making an Athletics check contested by the smaller creature's Athletics or Acrobatics check. The smaller creature chooses which ability to use."
         ]
     },
     {
