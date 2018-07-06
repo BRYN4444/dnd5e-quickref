@@ -51,9 +51,9 @@ data_food = [
         icon: "beer-stein",
         subtitle: "The affects of overendulging",
         description: "Drinking is enjoyed almost everywhere, either for enjoyment or to to take your mind off things",
-        reference: "(This is a slightly modified homebrew system.)",
+        reference: "(This is a slightly modified homebrew system by Reddit user Spars.)",
         bullets: [
-            "Alcoholic drinks are divided into two categories, <b>Light and Heavy brews</b>. <i>Mead</i> and <i>Ale</i> are considered Light, with <i>Wines</i> considered Heavy.",
+            "Alcoholic drinks are divided into two categories, <b>Light and Heavy brews</b>. <i>Meads</i>, <i>Ales</i>, and <i>Ciders</i> are considered Light, with <i>Wines</i> and <i>Liquors<i> considered Heavy. Note: potency could make weak drinks strong.",
             "A &quot;<b>serving</b>&quot; is 1 &quot;point&quot; of heavy brew, or 2 points of light brew. A character must consume a total number of servings equal to their <b>Constitution modifier</b> to become &quot;drunk&quot; (minimum 1). Consuming <b>twice this amount</b> results in a character blacking out <i>unconscious</i>.",
             "Once a character is drunk, they gain the <i>Poisoned</i> condition for a <b>number of hours equal to 6 - their Constitution modifier</b> (minimum 1). After that period, the character is &quot;hungover&quot; and simply suffers <b>disadvantage</b> on ability checks for <b>half the time they were drunk</b>.",
             "Characters can make a <b>DC 10 Constitution saving throw</b> to negate the effects of becoming drunk, but must make the throw again if they consume more alcohol before their original negated drunkenness would have worn off.",
