@@ -8,8 +8,8 @@ data_combat = [
         bullets: [
             "The DM compares the Stealth checks of anyone hiding with the passive Perception score of each creature on the opposing side.",
             "Nobody is surprised if neither side of an encounter was trying to be stealthy.",
-            "A member of a group can be surprised even if the other members aren&#39;t.",
-            "Surprised beings can&#39;t move or take an action on their first turn of the combat, and you can&#39;t take a reaction until that turn ends. They still roll <b>initiative</b>, however."
+            "A member of a group can be surprised even if the other members aren't.",
+            "Surprised beings can't move or take an action on their first turn of the combat, and you can't take a reaction until that turn ends. They still roll <b>initiative</b>, however."
         ]
     },
     {

@@ -22,9 +22,9 @@ data_attack = [
         description: "Determine if your attack hits your target, critical hits, or critical misses.",
         reference: "PHB, pg. 194.",
         bullets: [
-            "To make an attack roll, <b>roll a d20 and add the appropriate modifiers</b>. If the total of the roll plus modifiers equals or exceeds the <b>target&#39;s Armor Class (AC)</b>, the attack hits.",
-            "If the d20 roll for an attack is a 20, the attack becomes a <b>critical hit</b>, and thus hits regardless of any modifiers or the target&#39;s AC. For further details, see the <i>Damage Roll</i> section.",
-            "If the d20 roll for an attack is a 1, the attack becomes a <b>critical miss</b>, and misses regardless of any modifiers or the target&#39;s AC."
+            "To make an attack roll, <b>roll a d20 and add the appropriate modifiers</b>. If the total of the roll plus modifiers equals or exceeds the <b>target's Armor Class (AC)</b>, the attack hits.",
+            "If the d20 roll for an attack is a 20, the attack becomes a <b>critical hit</b>, and thus hits regardless of any modifiers or the target's AC. For further details, see the <i>Damage Roll</i> section.",
+            "If the d20 roll for an attack is a 1, the attack becomes a <b>critical miss</b>, and misses regardless of any modifiers or the target's AC."
         ]
     },
     {

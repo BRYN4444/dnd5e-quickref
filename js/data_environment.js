@@ -76,7 +76,7 @@ data_environment_vision = [
         reference: "PHB, pgs. 183-184.",
         bullets: [
             "Within a specified range, a creature with darkvision can <b>see in darkness as if the darkness were dim light</b>, so areas of darkness are only lightly obscured as far as that creature is concerned.",
-            "However, the creature can&#39;t discern color in darkness, only shades of gray.",
+            "However, the creature can't discern color in darkness, only shades of gray.",
             "Many creatures in the worlds of D&D, especially those that dwell underground, have darkvision."
         ]
     },
@@ -125,7 +125,7 @@ data_environment_cover = [
         description: "A target has total cover if it is completely concealed by an obstacle",
         reference: "PHB, pg. 196.",
         bullets: [
-            "A target with total cover <b>can&#39;t be targeted directly</b> by an attack or a spell, although some spells can reach such a target by including it in an area of effect.",
+            "A target with total cover <b>can't be targeted directly</b> by an attack or a spell, although some spells can reach such a target by including it in an area of effect.",
             "If a target is behind multiple sources of cover, only the most protective degree of cover applies"
         ]
     },

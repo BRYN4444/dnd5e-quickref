@@ -44,7 +44,7 @@ data_abilities_extra = [
             "To make a saving throw, <b>roll a d20</b> and add the appropriate <b>Ability/Skill Modifier</b> listed below.",
             "A saving throw can be modified by a situational bonus or penalty and can be affected by advantage and disadvantage, as determined by the DM.",
             "Each class gives <b>proficiency</b> in at least two saving throws, which lets a character add his or her proficiency bonus to saving throws made using a particular ability score.",
-            "The <b>Difficulty Class (DC)</b> for a saving throw is determined by the effect that causes it. For example, the DC for a saving throw allowed by a spell is determined by the caster&#39;s spellcasting ability and proficiency bonus.",
+            "The <b>Difficulty Class (DC)</b> for a saving throw is determined by the effect that causes it. For example, the DC for a saving throw allowed by a spell is determined by the caster's spellcasting ability and proficiency bonus.",
             "The result of a successful or failed saving throw is also detailed in the effect that allows the save. Usually, a successful save means that a creature suffers no harm, or reduced harm, from an effect."
         ]
     },
@@ -109,7 +109,7 @@ data_abilities_str = [
         description: "Your Strength score determines the amount of weight you can bear",
         reference: "PHB, pg. 176.",
         bullets: [
-            "Your <b>carrying capacity</b> is your <b>Strength score multiplied by 15</b>. This is the weight (in pounds) that you can carry, which is high enough that most characters don&#39;t usually have to worry about it.",
+            "Your <b>carrying capacity</b> is your <b>Strength score multiplied by 15</b>. This is the weight (in pounds) that you can carry, which is high enough that most characters don't usually have to worry about it.",
             "You can <b>push, drag, or lift</b> a weight in pounds up to twice your carrying capacity (or <b>30 times your Strength score</b>). While pushing or dragging weight in excess of your carrying capacity, <b>your speed drops to 5 feet</b>."
         ]
     }
@@ -144,7 +144,7 @@ data_abilities_dex = [
             "Roll a <b>d20</b> and add your <b>Acrobatic Skill Modifier</b> versus a <b>Difficulty Class (DC)</b> set by the DM.",
             "Example: Trying to run across a sheet of ice.",
             "Example: Balancing on a tightrope.",
-            "Example: Staying upright on a rocking ship&#39;s deck.",
+            "Example: Staying upright on a rocking ship's deck.",
             "Example: Perform acrobatic stunts, including dives, rolls, somersaults, and flips."
         ]
     },
@@ -159,7 +159,7 @@ data_abilities_dex = [
             "Example: Planting something on someone else.",
             "Example: Concealing an object on your person.",
             "Example: Whether you can lift a coin purse off another person.",
-            "Example: Slip something out of another person&#39;s pocket."
+            "Example: Slip something out of another person's pocket."
         ]
     },
     {
@@ -192,9 +192,9 @@ data_abilities_dex = [
         reference: "PHB, pgs. 14, 144-145.",
         bullets: [
             "Things that contribute to your AC include the armor you wear, the shield you carry, and your Dexterity modifier. Not all characters wear armor or carry shields, however.",
-            "Without armor or a shield, your character&#39;s AC equals <b>10 + their Dexterity modifier</b>.",
+            "Without armor or a shield, your character's AC equals <b>10 + their Dexterity modifier</b>.",
             "AC while wearing armor or wielding a shield is determined by each type.",
-            "Wearing armor your character isn't proficient in results in <b>disadvantage</b> on any ability check, saving throw, or attack roll that involves Strength or Dexterity, and you can&#39;t cast spells."
+            "Wearing armor your character isn't proficient in results in <b>disadvantage</b> on any ability check, saving throw, or attack roll that involves Strength or Dexterity, and you can't cast spells."
         ]
     }
 ]
@@ -319,7 +319,7 @@ data_abilities_wis = [
         title: "Wisdom Check",
         icon: "beard",
         subtitle: "Basic ability check",
-        description: "Reflect an effort to read body language, understand someone&#39;s feelings, notice things about the environment, or care for an injured person",
+        description: "Reflect an effort to read body language, understand someone's feelings, notice things about the environment, or care for an injured person",
         reference: "PHB, pg. 178.",
         bullets: [
             "Roll a <b>d20</b> and add your <b>Wisdom Modifier</b> versus a <b>Difficulty Class (DC)</b> set by the DM.",
@@ -337,7 +337,7 @@ data_abilities_wis = [
             "Roll a <b>d20</b> and add your <b>Animal Handling Skill Modifier</b> versus a <b>Difficulty Class (DC)</b> set by the DM.",
             "Example: Calming down a domesticated animal.",
             "Example: Keeping a mount from getting spooked.",
-            "Example: Intuit an animal&#39;s intentions.",
+            "Example: Intuit an animal's intentions.",
             "Example: Control your mount when you attempt a risky maneuver."
         ]
     },
@@ -351,7 +351,7 @@ data_abilities_wis = [
             "Roll a <b>d20</b> and add your <b>Insight Skill Modifier</b> versus a <b>Difficulty Class (DC)</b> set by the DM.",
             "Performing an Insight Check involves gleaning clues from body language, speech habits, and changes in mannerisms.",
             "Example: Searching out a lie.",
-            "Example: Predicting someone&#39;s next move."
+            "Example: Predicting someone's next move."
         ]
     },
     {
@@ -438,7 +438,7 @@ data_abilities_cha = [
             "Example: Trying to fast-talk a guard or con a merchant.",
             "Example: Earning money through gambling.",
             "Example: Passing yourself off in a disguise.",
-            "Example: Dulling someone&#39;s suspicions with false assurances.",
+            "Example: Dulling someone's suspicions with false assurances.",
             "Example: Maintain a straight face while telling a blatant lie."
         ]
     },
