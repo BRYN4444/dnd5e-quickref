@@ -8,7 +8,7 @@ data_abilities_extra = [
         bullets: [
             "The DM chooses an ability/skill relevant to the action as well as a Difficilty Class (DC) number to roll against. The player then <b>rolls a d20</b> and adds the relevant <b>ability/skill modifier and any bonuses/penalties</b>. If the player's final number is greater than the DC number, than the player's action is successful. Lesser numbers, or ties, result in failure.",
             "The DM might ask for checks in abilities tangentially related to the action, depending on the context. In this case, players may ask that skills that don't relate to the ability, but do relate more directly to the action, are used in assisting the check.",
-            "<b>Passive Ability/Skill Checks</b> require no rolls, and are used by the DM to secretly determine successes. They are <b>10 + the modifier required</b>. If the being has advantage, then add 5. Disadvantage, subtract 5."
+            "<b>Passive Ability/Skill Checks</b> require no rolls, and are used by the DM to secretly determine successes. They are <b>10 + the modifier required</b>. If the being has advantage, then add 5. Disadvantage, subtract 5.",
 			"With <b>Group Ability/Skill Checks</b> the characters who are skilled at a particular task help cover those who aren't. Everyone in the group makes the check and if at least half the group succeeds, the whole group succeeds."
 			]
     },
