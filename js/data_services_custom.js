@@ -4,14 +4,15 @@ data_selling = [
         icon: "locked-chest",
         subtitle: "Standard exchange rates",
         description: "Different parts of the world may differ from Gold and use their own currencies",
-        reference: "PHB, pg. 143.",
+        reference: "PHB, pg. 143 (includes homebrew currency types).",
         bullets: [
-            "<table style='text-align:left;width:100%;'><tr><th>Currency types:</th><th>CP</th><th>SP</th><th>EP</th><th>GP</th><th>PP</th></tr><tr><th>Copper (cp)</th><td>1</td><td>10</td><td>50</td><td>100</td><td>1,000</td></tr><tr><th>Silver (sp)</th><td>1/10</td><td>1</td><td>5</td><td>10</td><td>100</td></tr><tr><th>Electrum (ep)</th><td>1/50</td><td>1/5</td><td>1</td><td>2</td><td>20</td></tr><tr><th>Gold (gp)</th><td>1/100</td><td>1/10</td><td>1/2</td><td>1</td><td>10</td></tr><tr><th>Platinum (pp)</th><td>1/1,000</td><td>1/100</td><td>1/20</td><td>1/10</td><td>1</td></tr></table>",
-            "Common coins come in several different denominations based on the relative worth of the metal from which they are made. The three most common coins are the <b>gold piece (gp)</b>, the <b>silver piece (sp)</b>, and the <b>copper piece (cp)</b>.",
-            "<b>The gold piece is the standard unit of measure for wealth</b>, even if the coin itself is not commonly used. When merchants discuss deals that involve goods or services worth hundreds or thousands of gold pieces, the transactions don’t usually involve the exchange of individual coins. Rather, the gold piece is a standard measure of value, and the actual exchange is in gold bars, letters of credit, or valuable goods.",
-			"A skilled (but not exceptional) artisan can earn one gold piece a day. One gold piece is worth ten silver pieces, the most prevalent coin among commoners. A silver piece buys a laborer’s work for half a day. One silver piece is worth ten copper pieces, which are common among laborers and beggars.",
-			"The <b>electrum piece (ep)</b> and the <b>platinum piece (pp)</b> originate from fallen empires and lost kingdoms, and they sometimes arouse suspicion and skepticism when used in transactions."
-		]
+            "<table style='text-align:left;'><tr><th>Currency types:</th><th>Copper</th><th>Silver</th><th>Gold (g)</th><th>CREDITS (&#8354;)</th><th>Trinity (&#358;)</th></tr><tr><th>Value in Copper:</th><td>1</td><td>1/10</td><td>1/100</td><td>1/1000</td><td>1/10000</td></tr><tr><th>Value in Silver:</th><td>10</td><td>1</td><td>1/10</td><td>1/100</td><td>1/1000</td></tr><tr><th>Value in Gold:</th><td>100</td><td>10</td><td>1</td><td>1/10</td><td>1/100</td></tr><tr><th>Value in Credits:</th><td>1000</td><td>100</td><td>10</td><td>1</td><td>1/10</td></tr><tr><th>Value in Trinity:</th><td>10000</td><td>1000</td><td>100</td><td>10</td><td>1</td></tr><tr><th>Value in FLOZ (&#1171;&#7458;):</th><td colspan='5'>Value fluctuates greatly; determined my merchants.</td></tr><tr><th>Value in Gems:</th><td colspan='5'>Determine their value in Gold, and then convert.</td></tr></table>",
+            "<b>Gold, Silver, and Copper coins</b> are standards in many places accross the globe.",
+            "<b>Credits</b> are exclusively used in Minderheit of the Empas continent. They are paper bank notes detailing their ammounts in increments of 1, 5, 10, 25, and 100.",
+            "<b>Trinity</b> Coins are exclusively used in the Lainmund continent along side regular Copper, Silver, and Gold pieces. These are typically used by the wealthy.",
+            "<b>FLOZ</b> is...",
+            "<b>Gems</b> are traded as currencies in some places..."
+        ]
     },
     {
         title: "Selling Treasure",
