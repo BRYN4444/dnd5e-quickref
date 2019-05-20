@@ -76,6 +76,9 @@ table#drug td:last-child {
     color: white;
     font-size: 16pt;
 }
+.section-title span {
+	font-size: 75%;
+}
 
 .float-right {
     float: right;
@@ -285,7 +288,7 @@ body {
     justify-content:center;
     align-content:center;
     background:#000;
-    padding:8px 8px 1px 8px;
+    /*padding:8px 8px 1px 8px;*/
 }
 
 .page {
@@ -382,18 +385,20 @@ p:first-child {
 
 /* Smart phone, portrait */
 @media (min-width:    0px) and (max-width:  479px) {
+	body { margin:0px; }
     .fontsize { font-size: 12pt; } 
     .iconsize { width: 44px; height: 44px;} 
     .itemsize { height: 44px; width: 100%; } 
-    .modalsize {} 
+    .modalsize { margin: 8px 8px 30px; } 
 }
 
 /* Smart phone, landscape */
 @media (min-width:  480px) and (max-width:  767px) {
+	body { margin:0px; }
     .fontsize { font-size: 11pt; }
     .iconsize { width: 40px; height: 40px;}
     .itemsize { height: 40px; width:  50%; }
-    .modalsize {}
+    .modalsize { margin: 8px 8px 30px; }
 }
 
 /* Tablet, portrait */
